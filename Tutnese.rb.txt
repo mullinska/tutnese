@@ -1,0 +1,100 @@
+def tutnese(str)
+	length = str.length
+	lengthcount = str.length
+	
+	
+	while str[0] == " "
+		str = str[1..-1]
+	end
+	while str[-1] == " "
+		str = str[0..-2]
+	end
+	finalstr = ""
+	while lengthcount > 0
+		if str[length-lengthcount] == "b"
+			stradd = "bub"
+		end
+		if str[length-lengthcount] == "c"
+			stradd = "cash"
+		end
+		if str[length-lengthcount] == "d"
+			stradd = "dud"
+		end
+		if str[length-lengthcount] == "f"
+			stradd = "fud"
+		end
+		if str[length-lengthcount] == "g"
+			stradd = "gug"
+		end
+		if str[length-lengthcount] == "h"
+			stradd = "hash"
+		end
+		if str[length-lengthcount] == "j"
+			stradd = "jay"
+		end
+		if str[length-lengthcount] == "k"
+			stradd = "kuck"
+		end
+		if str[length-lengthcount] == "l"
+			stradd = "lul"
+		end
+		if str[length-lengthcount] == "m"
+			stradd = "mum"
+		end
+		if str[length-lengthcount] == "n"
+			stradd = "nun"
+		end
+		if str[length-lengthcount] == "p"
+			stradd = "pup"
+		end
+		if str[length-lengthcount] == "q"
+			stradd = "quack"
+		end
+		if str[length-lengthcount] == "r"
+			stradd = "rug"
+		end
+		if str[length-lengthcount] == "s"
+			stradd = "sus"
+		end
+		if str[length-lengthcount] == "t"
+			stradd = "tut"
+		end
+		if str[length-lengthcount] == "v"
+			stradd = "vuv"
+		end
+		if str[length-lengthcount] == "w"
+			stradd = "wash"
+		end
+		if str[length-lengthcount] == "x"
+			stradd = "xux"
+		end
+		if str[length-lengthcount] == "y"
+			stradd = "yub"
+		end
+		if str[length-lengthcount] == "z"
+			stradd = "zug"
+		end
+		if str[length-lengthcount] == "a"
+			stradd = "a"
+		end
+		if str[length-lengthcount] == "e"
+			stradd = "e"
+		end
+		if str[length-lengthcount] == "i"
+			stradd = "i"
+		end
+		if str[length-lengthcount] == "o"
+			stradd = "o"
+		end
+		if str[length-lengthcount] == "u"
+			stradd = "u"
+		end
+		if str[length-lengthcount] == str[(length-lengthcount+1)]
+			stradd = "squat" + str[length-lengthcount] + str[length-lengthcount]
+			lengthcount = lengthcount - 1
+		end
+		finalstr = finalstr + stradd
+		lengthcount = lengthcount - 1
+	end
+	return finalstr
+end
